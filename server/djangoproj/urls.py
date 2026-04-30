@@ -21,7 +21,7 @@ from django.conf import settings
 
 urlpatterns = [
     path(
-        'admin/', 
+        'admin/',
         admin.site.urls),
     path(
         'djangoapp/',
@@ -30,24 +30,24 @@ urlpatterns = [
         'dealers/',
          TemplateView.as_view(template_name="index.html")),
     path(
-        'dealer/<int:dealer_id>', 
+        'dealer/<int:dealer_id>',
         TemplateView.as_view(template_name="index.html")),
     path(
         'login/',
         TemplateView.as_view(template_name="index.html")),
     path(
-        'register/', 
+        'register/',
         TemplateView.as_view(template_name="index.html")),
     path(
         'about/',
         TemplateView.as_view(template_name="About.html")),
     path(
-        'contact/', 
+        'contact/',
         TemplateView.as_view(template_name="Contact.html")),
     path(
-        'postreview/<int:dealer_id>', 
+        'postreview/<int:dealer_id>',
         TemplateView.as_view(template_name="index.html")),
     path(
-        '', 
+        '',
         TemplateView.as_view(template_name="Home.html")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
