@@ -33,7 +33,8 @@ ALLOWED_HOSTS = [
     'your-long-domain-name-here.com'
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://jisna293-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
+    'https://jisna293-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    ]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
